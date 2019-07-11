@@ -1,7 +1,78 @@
-.search{
-    padding-top: 25px;
+.errorString {
+  color: red;
+  display: inline-block;
+  margin: 15px auto;
+}
+
+.search {
+  padding-top: 25px;
 }
 
 .card {
-    margin: 50px auto;
+  margin: 50px auto;
+  width: 300px;
+}
+
+.repoCard {
+  h5 {
+    width: 75%;
+  }
+  .repoIcon {
+    float: right;
+    width: 20%;
+    height: 40px;
+    margin-top: 10px;
+  }
+}
+
+.historyList {
+  padding: 10px;
+  margin: 0 auto;
+  height: 600px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  .card {
+    margin: 40px;
+    display: inline-block;
+    flex: 0 0 auto;
+  }
+  .btn {
+    display: inline-block;
+    margin: 0 auto;
+  }
+}
+
+.form-control,
+.btn-outline-secondary {
+  transition: border 2.5s;
+}
+
+.inputError {
+  border-color: red !important;
+  animation: shake 0.8s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transition: none;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
 }
